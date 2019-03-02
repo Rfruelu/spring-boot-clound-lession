@@ -1,0 +1,5 @@
+2017-07-14 15:21:16,614 INFO (StartupInfoLogger.java:48)- Starting Application on HYP9KT528BZ9CEF with PID 4412 (E:\zjhtWorkSpace\springBootMybatis\target\classes started by Administrator in E:\zjhtWorkSpace\springBootMybatis)
+2017-07-14 15:21:16,622 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-07-14 15:21:16,622 INFO (SpringApplication.java:661)- No active profile set, falling back to default profiles: default
+2017-07-14 15:21:19,031 INFO (StartupInfoLogger.java:57)- Started Application in 2.757 seconds (JVM running for 3.831)
+2017-07-14 15:21:19,032 INFO (Application.java:58)- SpringBoot Start Success

@@ -1,0 +1,27 @@
+2017-07-17 17:20:03,969 INFO (StartupInfoLogger.java:48)- Starting JpaDemoApplication on HYP9KT528BZ9CEF with PID 8336 (E:\ideaProject\jpademo\target\classes started by Administrator in E:\ideaProject\jpademo)
+2017-07-17 17:20:03,974 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2017-07-17 17:20:03,975 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2017-07-17 17:20:09,122 INFO (StartupInfoLogger.java:57)- Started JpaDemoApplication in 5.435 seconds (JVM running for 6.184)
+2017-07-17 17:21:40,818 DEBUG (UserController.java:30)- save
+2017-07-17 17:24:41,602 DEBUG (UserController.java:30)- save
+2017-07-17 17:25:56,389 DEBUG (UserController.java:30)- save
+2017-07-17 17:26:14,643 DEBUG (UserController.java:30)- save
+2017-07-17 17:26:57,950 DEBUG (UserController.java:30)- save
+2017-07-17 17:27:31,280 DEBUG (UserController.java:46)- queryByName
+2017-07-17 17:28:25,242 DEBUG (UserController.java:46)- queryByName
+2017-07-17 17:28:55,370 DEBUG (UserController.java:52)- queryByAge
+2017-07-17 17:29:28,429 DEBUG (UserController.java:63)- sort
+2017-07-17 17:29:45,828 DEBUG (UserController.java:63)- sort
+2017-07-17 17:29:51,207 DEBUG (UserController.java:63)- sort
+2017-07-17 17:30:01,974 DEBUG (UserController.java:63)- sort
+2017-07-17 17:30:11,063 INFO (StartupInfoLogger.java:48)- Starting JpaDemoApplication on HYP9KT528BZ9CEF with PID 8336 (E:\ideaProject\jpademo\target\classes started by Administrator in E:\ideaProject\jpademo)
+2017-07-17 17:30:11,063 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2017-07-17 17:30:11,063 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2017-07-17 17:30:12,637 INFO (StartupInfoLogger.java:57)- Started JpaDemoApplication in 1.622 seconds (JVM running for 609.7)
+2017-07-17 17:30:12,883 DEBUG (UserController.java:63)- sort
+2017-07-17 17:30:51,370 DEBUG (UserController.java:69)- page
+2017-07-17 17:31:34,264 DEBUG (UserController.java:69)- page
+2017-07-17 17:32:40,997 INFO (StartupInfoLogger.java:48)- Starting JpaDemoApplication on HYP9KT528BZ9CEF with PID 8336 (E:\ideaProject\jpademo\target\classes started by Administrator in E:\ideaProject\jpademo)
+2017-07-17 17:32:40,997 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2017-07-17 17:32:40,997 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2017-07-17 17:32:42,509 INFO (StartupInfoLogger.java:57)- Started JpaDemoApplication in 1.549 seconds (JVM running for 759.571)

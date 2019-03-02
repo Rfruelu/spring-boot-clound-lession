@@ -1,0 +1,31 @@
+server:
+  port: 8890
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+  application:
+    name: config-client
+  cloud:
+    config:
+    #spring.cloud.config.label 指明远程仓库的分支
+      label: master
+      #spring.cloud.config.profile 开发环境配置
+      profile: dev
+      #uri: http://localhost:8888/
+      #spring.cloud.config.discovery.enabled 是从配置中心读取文件。
+      discovery:
+        enabled: true
+        #service-id 配置中心的servieId，即服务名。
+        service-id: config-server
+eureka:
+  instance:
+    hostname: ${spring.application.name}
+  client:
+    service-url:
+      defaultZone: http://localhost:8762/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

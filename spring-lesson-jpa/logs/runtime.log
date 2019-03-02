@@ -1,0 +1,366 @@
+2018-12-24 15:22:34.444[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - Starting SpringlessonjpaApplicationTests on PC-20180416GRNB with PID 17708 (started by Administrator in E:\ideaProject\spring-lesson-jpa)
+2018-12-24 15:22:34.453[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - No active profile set, falling back to default profiles: default
+2018-12-24 15:22:34.491[][][main]INFO  - o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@53251a66: startup date [Mon Dec 24 15:22:34 CST 2018]; root of context hierarchy
+2018-12-24 15:22:34.747[][][background-preinit]INFO  - o.h.v.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-12-24 15:22:36.183[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-24 15:22:36.332[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-24 15:22:36.365[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lujia.repository.RedisRoleRepository.
+2018-12-24 15:22:36.366[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lujia.repository.UserRepository.
+2018-12-24 15:22:36.884[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f09e1ebd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:22:36.940[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [class com.lujia.config.RedisConfiguration$$EnhancerBySpringCGLIB$$50472207] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:22:36.945[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$39b054db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:22:37.841[][][main]INFO  - c.a.d.pool.DruidDataSource - {dataSource-1} inited
+2018-12-24 15:22:37.898[][][main]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:22:37.920[][][main]INFO  - o.h.j.i.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-24 15:22:38.027[][][main]INFO  - org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-12-24 15:22:38.030[][][main]INFO  - o.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-24 15:22:38.032[][][main]INFO  - o.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-12-24 15:22:38.102[][][main]INFO  - o.h.a.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-24 15:22:38.348[][][main]INFO  - o.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-12-24 15:22:38.887[][][main]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:22:40.174[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@53251a66: startup date [Mon Dec 24 15:22:34 CST 2018]; root of context hierarchy
+2018-12-24 15:22:40.261[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.String com.lujia.controller.IndexController.index()
+2018-12-24 15:22:40.262[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.lujia.controller.IndexController.login()
+2018-12-24 15:22:40.263[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logger]}" onto public java.lang.String com.lujia.controller.LoggerController.testLogger()
+2018-12-24 15:22:40.264[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logger/demo]}" onto public java.lang.Object com.lujia.controller.LoggerDemoController.doWork(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-24 15:22:40.265[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/cache/findAll]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.RedisDemoController.findAll()
+2018-12-24 15:22:40.266[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/delete]}" onto public java.lang.Object com.lujia.controller.RedisRoleController.delete(java.lang.Long)
+2018-12-24 15:22:40.266[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/insert]}" onto public java.lang.Object com.lujia.controller.RedisRoleController.insert(java.lang.String,java.lang.String)
+2018-12-24 15:22:40.266[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/getAll]}" onto public java.util.List<com.lujia.domain.RedisRole> com.lujia.controller.RedisRoleController.getAll()
+2018-12-24 15:22:40.268[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete]}" onto public java.lang.String com.lujia.controller.UserController.delete(java.lang.String,java.lang.String)
+2018-12-24 15:22:40.268[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save]}" onto public java.lang.String com.lujia.controller.UserController.save(java.lang.String,java.lang.String)
+2018-12-24 15:22:40.268[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.lujia.controller.UserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-24 15:22:40.268[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/findByEmail]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.UserController.findByEmail(java.lang.String)
+2018-12-24 15:22:40.268[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/cutPage]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.UserController.cutPage(int)
+2018-12-24 15:22:40.269[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/denyLogger]}" onto public java.lang.String com.lujia.denyLogger.DenyLoggerController.denyLogger()
+2018-12-24 15:22:40.271[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-24 15:22:40.272[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-24 15:22:40.314[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/lujia/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:22:40.315[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:22:40.315[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:22:40.361[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:22:40.697[][][main]WARN  - o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-12-24 15:22:40.785[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - Started SpringlessonjpaApplicationTests in 7.191 seconds (JVM running for 7.967)
+2018-12-24 15:22:40.828[][][main]INFO  - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-12-24 15:22:40.828[][][main]INFO  - o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-12-24 15:22:40.846[][][main]INFO  - o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 18 ms
+2018-12-24 15:22:40.902[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - 
+2018-12-24 15:22:40.909[][][Thread-3]INFO  - o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@53251a66: startup date [Mon Dec 24 15:22:34 CST 2018]; root of context hierarchy
+2018-12-24 15:22:40.914[][][Thread-3]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:22:40.922[][][Thread-3]INFO  - c.a.d.pool.DruidDataSource - {dataSource-1} closed
+2018-12-24 15:23:14.599[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - Starting SpringlessonjpaApplicationTests on PC-20180416GRNB with PID 11364 (started by Administrator in E:\ideaProject\spring-lesson-jpa)
+2018-12-24 15:23:14.600[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - No active profile set, falling back to default profiles: default
+2018-12-24 15:23:14.644[][][main]INFO  - o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@53251a66: startup date [Mon Dec 24 15:23:14 CST 2018]; root of context hierarchy
+2018-12-24 15:23:14.929[][][background-preinit]INFO  - o.h.v.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-12-24 15:23:16.213[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-24 15:23:16.371[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-24 15:23:16.406[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lujia.repository.RedisRoleRepository.
+2018-12-24 15:23:16.407[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lujia.repository.UserRepository.
+2018-12-24 15:23:16.893[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$50750c2a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:23:16.943[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [class com.lujia.config.RedisConfiguration$$EnhancerBySpringCGLIB$$b01e0f74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:23:16.948[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$99874248] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:23:17.806[][][main]INFO  - c.a.d.pool.DruidDataSource - {dataSource-1} inited
+2018-12-24 15:23:17.862[][][main]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:23:17.898[][][main]INFO  - o.h.j.i.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-24 15:23:17.995[][][main]INFO  - org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-12-24 15:23:17.998[][][main]INFO  - o.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-24 15:23:18.000[][][main]INFO  - o.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-12-24 15:23:18.161[][][main]INFO  - o.h.a.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-24 15:23:18.291[][][main]INFO  - o.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-12-24 15:23:18.937[][][main]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:23:20.167[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@53251a66: startup date [Mon Dec 24 15:23:14 CST 2018]; root of context hierarchy
+2018-12-24 15:23:20.258[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.String com.lujia.controller.IndexController.index()
+2018-12-24 15:23:20.259[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.lujia.controller.IndexController.login()
+2018-12-24 15:23:20.259[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logger]}" onto public java.lang.String com.lujia.controller.LoggerController.testLogger()
+2018-12-24 15:23:20.260[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logger/demo]}" onto public java.lang.Object com.lujia.controller.LoggerDemoController.doWork(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-24 15:23:20.261[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/cache/findAll]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.RedisDemoController.findAll()
+2018-12-24 15:23:20.263[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/delete]}" onto public java.lang.Object com.lujia.controller.RedisRoleController.delete(java.lang.Long)
+2018-12-24 15:23:20.263[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/insert]}" onto public java.lang.Object com.lujia.controller.RedisRoleController.insert(java.lang.String,java.lang.String)
+2018-12-24 15:23:20.263[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/getAll]}" onto public java.util.List<com.lujia.domain.RedisRole> com.lujia.controller.RedisRoleController.getAll()
+2018-12-24 15:23:20.265[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete]}" onto public java.lang.String com.lujia.controller.UserController.delete(java.lang.String,java.lang.String)
+2018-12-24 15:23:20.266[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save]}" onto public java.lang.String com.lujia.controller.UserController.save(java.lang.String,java.lang.String)
+2018-12-24 15:23:20.266[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.lujia.controller.UserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-24 15:23:20.266[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/cutPage]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.UserController.cutPage(int)
+2018-12-24 15:23:20.267[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/findByEmail]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.UserController.findByEmail(java.lang.String)
+2018-12-24 15:23:20.267[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/denyLogger]}" onto public java.lang.String com.lujia.denyLogger.DenyLoggerController.denyLogger()
+2018-12-24 15:23:20.271[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-24 15:23:20.271[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-24 15:23:20.313[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/lujia/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:23:20.313[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:23:20.313[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:23:20.364[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:23:20.701[][][main]WARN  - o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-12-24 15:23:20.790[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - Started SpringlessonjpaApplicationTests in 7.013 seconds (JVM running for 7.786)
+2018-12-24 15:23:20.827[][][main]INFO  - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-12-24 15:23:20.827[][][main]INFO  - o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-12-24 15:23:20.844[][][main]INFO  - o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 17 ms
+2018-12-24 15:23:20.905[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - contentAsString:
+2018-12-24 15:23:20.912[][][Thread-3]INFO  - o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@53251a66: startup date [Mon Dec 24 15:23:14 CST 2018]; root of context hierarchy
+2018-12-24 15:23:20.918[][][Thread-3]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:23:20.923[][][Thread-3]INFO  - c.a.d.pool.DruidDataSource - {dataSource-1} closed
+2018-12-24 15:41:09.300[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - Starting SpringlessonjpaApplicationTests on PC-20180416GRNB with PID 19692 (started by Administrator in E:\ideaProject\spring-lesson-jpa)
+2018-12-24 15:41:09.301[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - No active profile set, falling back to default profiles: default
+2018-12-24 15:41:09.346[][][main]INFO  - o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6853425f: startup date [Mon Dec 24 15:41:09 CST 2018]; root of context hierarchy
+2018-12-24 15:41:09.607[][][background-preinit]INFO  - o.h.v.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-12-24 15:41:10.941[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-24 15:41:11.069[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-24 15:41:11.099[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lujia.repository.RedisRoleRepository.
+2018-12-24 15:41:11.101[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lujia.repository.UserRepository.
+2018-12-24 15:41:11.604[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4bb8afd8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:41:11.647[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [class com.lujia.config.RedisConfiguration$$EnhancerBySpringCGLIB$$ab61b322] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:41:11.652[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$94cae5f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:41:12.903[][][main]INFO  - c.a.d.pool.DruidDataSource - {dataSource-1} inited
+2018-12-24 15:41:12.949[][][main]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:41:12.974[][][main]INFO  - o.h.j.i.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-24 15:41:13.068[][][main]INFO  - org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-12-24 15:41:13.071[][][main]INFO  - o.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-24 15:41:13.074[][][main]INFO  - o.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-12-24 15:41:13.219[][][main]INFO  - o.h.a.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-24 15:41:13.337[][][main]INFO  - o.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-12-24 15:41:13.890[][][main]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:41:15.089[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6853425f: startup date [Mon Dec 24 15:41:09 CST 2018]; root of context hierarchy
+2018-12-24 15:41:15.177[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.String com.lujia.controller.IndexController.index()
+2018-12-24 15:41:15.178[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.lujia.controller.IndexController.login()
+2018-12-24 15:41:15.179[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logger]}" onto public java.lang.String com.lujia.controller.LoggerController.testLogger()
+2018-12-24 15:41:15.180[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logger/demo]}" onto public java.lang.Object com.lujia.controller.LoggerDemoController.doWork(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-24 15:41:15.181[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/cache/findAll]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.RedisDemoController.findAll()
+2018-12-24 15:41:15.183[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/delete]}" onto public java.lang.Object com.lujia.controller.RedisRoleController.delete(java.lang.Long)
+2018-12-24 15:41:15.184[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/insert]}" onto public java.lang.Object com.lujia.controller.RedisRoleController.insert(java.lang.String,java.lang.String)
+2018-12-24 15:41:15.184[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/getAll]}" onto public java.util.List<com.lujia.domain.RedisRole> com.lujia.controller.RedisRoleController.getAll()
+2018-12-24 15:41:15.185[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete]}" onto public java.lang.String com.lujia.controller.UserController.delete(java.lang.String,java.lang.String)
+2018-12-24 15:41:15.186[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save]}" onto public java.lang.String com.lujia.controller.UserController.save(java.lang.String,java.lang.String)
+2018-12-24 15:41:15.186[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.lujia.controller.UserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-24 15:41:15.186[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/findByEmail]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.UserController.findByEmail(java.lang.String)
+2018-12-24 15:41:15.186[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/cutPage]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.UserController.cutPage(int)
+2018-12-24 15:41:15.187[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/denyLogger]}" onto public java.lang.String com.lujia.denyLogger.DenyLoggerController.denyLogger()
+2018-12-24 15:41:15.190[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-24 15:41:15.191[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-24 15:41:15.231[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/lujia/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:41:15.232[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:41:15.232[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:41:15.281[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:41:15.687[][][main]WARN  - o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-12-24 15:41:15.792[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - Started SpringlessonjpaApplicationTests in 7.379 seconds (JVM running for 8.111)
+2018-12-24 15:41:15.829[][][main]INFO  - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-12-24 15:41:15.830[][][main]INFO  - o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-12-24 15:41:15.845[][][main]INFO  - o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 14 ms
+2018-12-24 15:41:15.886[][][Thread-3]INFO  - o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@6853425f: startup date [Mon Dec 24 15:41:09 CST 2018]; root of context hierarchy
+2018-12-24 15:41:15.892[][][Thread-3]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:41:15.897[][][Thread-3]INFO  - c.a.d.pool.DruidDataSource - {dataSource-1} closed
+2018-12-24 15:41:58.821[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - Starting SpringlessonjpaApplicationTests on PC-20180416GRNB with PID 6868 (started by Administrator in E:\ideaProject\spring-lesson-jpa)
+2018-12-24 15:41:58.822[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - No active profile set, falling back to default profiles: default
+2018-12-24 15:41:58.873[][][main]INFO  - o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6853425f: startup date [Mon Dec 24 15:41:58 CST 2018]; root of context hierarchy
+2018-12-24 15:41:59.124[][][background-preinit]INFO  - o.h.v.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-12-24 15:42:00.438[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-24 15:42:00.554[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-24 15:42:00.585[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lujia.repository.RedisRoleRepository.
+2018-12-24 15:42:00.587[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lujia.repository.UserRepository.
+2018-12-24 15:42:01.137[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4bb8afd8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:42:01.192[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [class com.lujia.config.RedisConfiguration$$EnhancerBySpringCGLIB$$ab61b322] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:42:01.198[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$94cae5f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:42:02.062[][][main]INFO  - c.a.d.pool.DruidDataSource - {dataSource-1} inited
+2018-12-24 15:42:02.105[][][main]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:42:02.126[][][main]INFO  - o.h.j.i.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-24 15:42:02.221[][][main]INFO  - org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-12-24 15:42:02.223[][][main]INFO  - o.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-24 15:42:02.225[][][main]INFO  - o.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-12-24 15:42:02.344[][][main]INFO  - o.h.a.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-24 15:42:02.501[][][main]INFO  - o.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-12-24 15:42:03.131[][][main]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:42:04.327[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6853425f: startup date [Mon Dec 24 15:41:58 CST 2018]; root of context hierarchy
+2018-12-24 15:42:04.407[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.String com.lujia.controller.IndexController.index()
+2018-12-24 15:42:04.409[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.lujia.controller.IndexController.login()
+2018-12-24 15:42:04.410[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logger]}" onto public java.lang.String com.lujia.controller.LoggerController.testLogger()
+2018-12-24 15:42:04.410[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logger/demo]}" onto public java.lang.Object com.lujia.controller.LoggerDemoController.doWork(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-24 15:42:04.412[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/cache/findAll]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.RedisDemoController.findAll()
+2018-12-24 15:42:04.414[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/delete]}" onto public java.lang.Object com.lujia.controller.RedisRoleController.delete(java.lang.Long)
+2018-12-24 15:42:04.414[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/insert]}" onto public java.lang.Object com.lujia.controller.RedisRoleController.insert(java.lang.String,java.lang.String)
+2018-12-24 15:42:04.414[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/getAll]}" onto public java.util.List<com.lujia.domain.RedisRole> com.lujia.controller.RedisRoleController.getAll()
+2018-12-24 15:42:04.416[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete]}" onto public java.lang.String com.lujia.controller.UserController.delete(java.lang.String,java.lang.String)
+2018-12-24 15:42:04.416[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save]}" onto public java.lang.String com.lujia.controller.UserController.save(java.lang.String,java.lang.String)
+2018-12-24 15:42:04.416[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.lujia.controller.UserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-24 15:42:04.416[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/findByEmail]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.UserController.findByEmail(java.lang.String)
+2018-12-24 15:42:04.416[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/cutPage]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.UserController.cutPage(int)
+2018-12-24 15:42:04.417[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/denyLogger]}" onto public java.lang.String com.lujia.denyLogger.DenyLoggerController.denyLogger()
+2018-12-24 15:42:04.421[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-24 15:42:04.421[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-24 15:42:04.460[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/lujia/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:42:04.460[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:42:04.460[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:42:04.507[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:42:04.849[][][main]WARN  - o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-12-24 15:42:04.940[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - Started SpringlessonjpaApplicationTests in 6.952 seconds (JVM running for 7.712)
+2018-12-24 15:42:04.979[][][main]INFO  - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-12-24 15:42:04.979[][][main]INFO  - o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-12-24 15:42:04.996[][][main]INFO  - o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 16 ms
+2018-12-24 15:42:05.039[][][Thread-3]INFO  - o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@6853425f: startup date [Mon Dec 24 15:41:58 CST 2018]; root of context hierarchy
+2018-12-24 15:42:05.044[][][Thread-3]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:42:05.050[][][Thread-3]INFO  - c.a.d.pool.DruidDataSource - {dataSource-1} closed
+2018-12-24 15:42:18.113[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - Starting SpringlessonjpaApplicationTests on PC-20180416GRNB with PID 9852 (started by Administrator in E:\ideaProject\spring-lesson-jpa)
+2018-12-24 15:42:18.114[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - No active profile set, falling back to default profiles: default
+2018-12-24 15:42:18.157[][][main]INFO  - o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6853425f: startup date [Mon Dec 24 15:42:18 CST 2018]; root of context hierarchy
+2018-12-24 15:42:18.417[][][background-preinit]INFO  - o.h.v.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-12-24 15:42:19.751[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-24 15:42:19.872[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-24 15:42:19.903[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lujia.repository.RedisRoleRepository.
+2018-12-24 15:42:19.904[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lujia.repository.UserRepository.
+2018-12-24 15:42:20.408[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4bb8afd8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:42:20.481[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [class com.lujia.config.RedisConfiguration$$EnhancerBySpringCGLIB$$ab61b322] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:42:20.487[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$94cae5f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:42:21.399[][][main]INFO  - c.a.d.pool.DruidDataSource - {dataSource-1} inited
+2018-12-24 15:42:21.447[][][main]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:42:21.470[][][main]INFO  - o.h.j.i.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-24 15:42:21.554[][][main]INFO  - org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-12-24 15:42:21.556[][][main]INFO  - o.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-24 15:42:21.557[][][main]INFO  - o.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-12-24 15:42:21.674[][][main]INFO  - o.h.a.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-24 15:42:21.806[][][main]INFO  - o.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-12-24 15:42:22.357[][][main]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:42:23.576[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6853425f: startup date [Mon Dec 24 15:42:18 CST 2018]; root of context hierarchy
+2018-12-24 15:42:23.657[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.String com.lujia.controller.IndexController.index()
+2018-12-24 15:42:23.658[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.lujia.controller.IndexController.login()
+2018-12-24 15:42:23.658[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logger]}" onto public java.lang.String com.lujia.controller.LoggerController.testLogger()
+2018-12-24 15:42:23.659[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logger/demo]}" onto public java.lang.Object com.lujia.controller.LoggerDemoController.doWork(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-24 15:42:23.660[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/cache/findAll]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.RedisDemoController.findAll()
+2018-12-24 15:42:23.661[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/delete]}" onto public java.lang.Object com.lujia.controller.RedisRoleController.delete(java.lang.Long)
+2018-12-24 15:42:23.662[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/insert]}" onto public java.lang.Object com.lujia.controller.RedisRoleController.insert(java.lang.String,java.lang.String)
+2018-12-24 15:42:23.662[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/getAll]}" onto public java.util.List<com.lujia.domain.RedisRole> com.lujia.controller.RedisRoleController.getAll()
+2018-12-24 15:42:23.664[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete]}" onto public java.lang.String com.lujia.controller.UserController.delete(java.lang.String,java.lang.String)
+2018-12-24 15:42:23.665[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save]}" onto public java.lang.String com.lujia.controller.UserController.save(java.lang.String,java.lang.String)
+2018-12-24 15:42:23.665[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.lujia.controller.UserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-24 15:42:23.665[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/cutPage]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.UserController.cutPage(int)
+2018-12-24 15:42:23.666[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/findByEmail]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.UserController.findByEmail(java.lang.String)
+2018-12-24 15:42:23.666[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/denyLogger]}" onto public java.lang.String com.lujia.denyLogger.DenyLoggerController.denyLogger()
+2018-12-24 15:42:23.670[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-24 15:42:23.671[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-24 15:42:23.710[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/lujia/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:42:23.710[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:42:23.710[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:42:23.757[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:42:24.137[][][main]WARN  - o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-12-24 15:42:24.237[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - Started SpringlessonjpaApplicationTests in 6.984 seconds (JVM running for 7.744)
+2018-12-24 15:42:24.274[][][main]INFO  - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-12-24 15:42:24.274[][][main]INFO  - o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-12-24 15:42:24.292[][][main]INFO  - o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 18 ms
+2018-12-24 15:42:24.377[][][main]INFO  - o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-12-24 15:42:24.773[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - interceptors[0]:org.springframework.web.servlet.handler.WebRequestHandlerInterceptorAdapter
+2018-12-24 15:42:24.787[][][Thread-3]INFO  - o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@6853425f: startup date [Mon Dec 24 15:42:18 CST 2018]; root of context hierarchy
+2018-12-24 15:42:24.792[][][Thread-3]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:42:24.796[][][Thread-3]INFO  - c.a.d.pool.DruidDataSource - {dataSource-1} closed
+2018-12-24 15:44:24.730[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - Starting SpringlessonjpaApplicationTests on PC-20180416GRNB with PID 12984 (started by Administrator in E:\ideaProject\spring-lesson-jpa)
+2018-12-24 15:44:24.731[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - No active profile set, falling back to default profiles: default
+2018-12-24 15:44:24.775[][][main]INFO  - o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6853425f: startup date [Mon Dec 24 15:44:24 CST 2018]; root of context hierarchy
+2018-12-24 15:44:25.047[][][background-preinit]INFO  - o.h.v.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-12-24 15:44:26.416[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-24 15:44:26.551[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-24 15:44:26.576[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lujia.repository.RedisRoleRepository.
+2018-12-24 15:44:26.577[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lujia.repository.UserRepository.
+2018-12-24 15:44:27.057[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4bb8afd8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:44:27.136[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [class com.lujia.config.RedisConfiguration$$EnhancerBySpringCGLIB$$ab61b322] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:44:27.141[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$94cae5f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:44:28.035[][][main]INFO  - c.a.d.pool.DruidDataSource - {dataSource-1} inited
+2018-12-24 15:44:28.082[][][main]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:44:28.102[][][main]INFO  - o.h.j.i.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-24 15:44:28.194[][][main]INFO  - org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-12-24 15:44:28.197[][][main]INFO  - o.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-24 15:44:28.198[][][main]INFO  - o.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-12-24 15:44:28.312[][][main]INFO  - o.h.a.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-24 15:44:28.450[][][main]INFO  - o.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-12-24 15:44:28.993[][][main]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:44:30.199[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6853425f: startup date [Mon Dec 24 15:44:24 CST 2018]; root of context hierarchy
+2018-12-24 15:44:30.299[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.String com.lujia.controller.IndexController.index()
+2018-12-24 15:44:30.300[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.lujia.controller.IndexController.login()
+2018-12-24 15:44:30.300[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logger]}" onto public java.lang.String com.lujia.controller.LoggerController.testLogger()
+2018-12-24 15:44:30.301[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logger/demo]}" onto public java.lang.Object com.lujia.controller.LoggerDemoController.doWork(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-24 15:44:30.302[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/cache/findAll]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.RedisDemoController.findAll()
+2018-12-24 15:44:30.303[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/delete]}" onto public java.lang.Object com.lujia.controller.RedisRoleController.delete(java.lang.Long)
+2018-12-24 15:44:30.304[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/insert]}" onto public java.lang.Object com.lujia.controller.RedisRoleController.insert(java.lang.String,java.lang.String)
+2018-12-24 15:44:30.304[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/getAll]}" onto public java.util.List<com.lujia.domain.RedisRole> com.lujia.controller.RedisRoleController.getAll()
+2018-12-24 15:44:30.306[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete]}" onto public java.lang.String com.lujia.controller.UserController.delete(java.lang.String,java.lang.String)
+2018-12-24 15:44:30.306[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save]}" onto public java.lang.String com.lujia.controller.UserController.save(java.lang.String,java.lang.String)
+2018-12-24 15:44:30.307[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.lujia.controller.UserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-24 15:44:30.307[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/cutPage]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.UserController.cutPage(int)
+2018-12-24 15:44:30.307[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/findByEmail]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.UserController.findByEmail(java.lang.String)
+2018-12-24 15:44:30.308[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/denyLogger]}" onto public java.lang.String com.lujia.denyLogger.DenyLoggerController.denyLogger()
+2018-12-24 15:44:30.311[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-24 15:44:30.312[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-24 15:44:30.357[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/lujia/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:44:30.358[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:44:30.358[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:44:30.411[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:44:30.770[][][main]WARN  - o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-12-24 15:44:30.861[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - Started SpringlessonjpaApplicationTests in 6.934 seconds (JVM running for 7.694)
+2018-12-24 15:44:30.900[][][main]INFO  - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-12-24 15:44:30.900[][][main]INFO  - o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-12-24 15:44:30.917[][][main]INFO  - o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 17 ms
+2018-12-24 15:44:31.091[][][main]INFO  - o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-12-24 15:44:31.433[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - interceptors[0]:org.springframework.web.servlet.handler.WebRequestHandlerInterceptorAdapter
+2018-12-24 15:44:32.460[][][Thread-3]INFO  - o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@6853425f: startup date [Mon Dec 24 15:44:24 CST 2018]; root of context hierarchy
+2018-12-24 15:44:32.468[][][Thread-3]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:44:32.474[][][Thread-3]INFO  - c.a.d.pool.DruidDataSource - {dataSource-1} closed
+2018-12-24 15:46:08.204[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - Starting SpringlessonjpaApplicationTests on PC-20180416GRNB with PID 16420 (started by Administrator in E:\ideaProject\spring-lesson-jpa)
+2018-12-24 15:46:08.205[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - No active profile set, falling back to default profiles: default
+2018-12-24 15:46:08.255[][][main]INFO  - o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6853425f: startup date [Mon Dec 24 15:46:08 CST 2018]; root of context hierarchy
+2018-12-24 15:46:08.509[][][background-preinit]INFO  - o.h.v.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-12-24 15:46:09.858[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-24 15:46:09.974[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-24 15:46:10.002[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lujia.repository.RedisRoleRepository.
+2018-12-24 15:46:10.003[][][main]INFO  - o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lujia.repository.UserRepository.
+2018-12-24 15:46:10.488[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4b0be67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:46:10.540[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [class com.lujia.config.RedisConfiguration$$EnhancerBySpringCGLIB$$6459c1b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:46:10.545[][][main]INFO  - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$4dc2f485] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 15:46:11.415[][][main]INFO  - c.a.d.pool.DruidDataSource - {dataSource-1} inited
+2018-12-24 15:46:11.457[][][main]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:46:11.478[][][main]INFO  - o.h.j.i.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-24 15:46:11.580[][][main]INFO  - org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-12-24 15:46:11.582[][][main]INFO  - o.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-24 15:46:11.584[][][main]INFO  - o.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-12-24 15:46:11.750[][][main]INFO  - o.h.a.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-24 15:46:11.888[][][main]INFO  - o.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-12-24 15:46:12.518[][][main]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:46:13.733[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6853425f: startup date [Mon Dec 24 15:46:08 CST 2018]; root of context hierarchy
+2018-12-24 15:46:13.820[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.String com.lujia.controller.IndexController.index()
+2018-12-24 15:46:13.822[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String com.lujia.controller.IndexController.login()
+2018-12-24 15:46:13.823[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logger]}" onto public java.lang.String com.lujia.controller.LoggerController.testLogger()
+2018-12-24 15:46:13.824[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logger/demo]}" onto public java.lang.Object com.lujia.controller.LoggerDemoController.doWork(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-24 15:46:13.826[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/cache/findAll]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.RedisDemoController.findAll()
+2018-12-24 15:46:13.828[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/delete]}" onto public java.lang.Object com.lujia.controller.RedisRoleController.delete(java.lang.Long)
+2018-12-24 15:46:13.828[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/insert]}" onto public java.lang.Object com.lujia.controller.RedisRoleController.insert(java.lang.String,java.lang.String)
+2018-12-24 15:46:13.829[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/role/getAll]}" onto public java.util.List<com.lujia.domain.RedisRole> com.lujia.controller.RedisRoleController.getAll()
+2018-12-24 15:46:13.831[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete]}" onto public java.lang.String com.lujia.controller.UserController.delete(java.lang.String,java.lang.String)
+2018-12-24 15:46:13.831[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save]}" onto public java.lang.String com.lujia.controller.UserController.save(java.lang.String,java.lang.String)
+2018-12-24 15:46:13.831[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.lujia.controller.UserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-24 15:46:13.831[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/cutPage]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.UserController.cutPage(int)
+2018-12-24 15:46:13.832[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/findByEmail]}" onto public java.util.List<com.lujia.domain.User> com.lujia.controller.UserController.findByEmail(java.lang.String)
+2018-12-24 15:46:13.832[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/denyLogger]}" onto public java.lang.String com.lujia.denyLogger.DenyLoggerController.denyLogger()
+2018-12-24 15:46:13.835[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-24 15:46:13.835[][][main]INFO  - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-24 15:46:13.879[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/lujia/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:46:13.879[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:46:13.879[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:46:13.931[][][main]INFO  - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-24 15:46:14.262[][][main]WARN  - o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-12-24 15:46:14.364[][][main]INFO  - c.l.SpringlessonjpaApplicationTests - Started SpringlessonjpaApplicationTests in 6.985 seconds (JVM running for 7.849)
+2018-12-24 15:46:14.402[][][main]INFO  - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+2018-12-24 15:46:14.403[][][main]INFO  - o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+2018-12-24 15:46:14.422[][][main]INFO  - o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 19 ms
+2018-12-24 15:46:14.502[][][main]INFO  - o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-12-24 15:46:14.915[][][main]ERROR - c.l.SpringlessonjpaApplicationTests - interceptors[0]:org.springframework.web.servlet.handler.WebRequestHandlerInterceptorAdapter
+2018-12-24 15:46:14.915[][][main]ERROR - c.l.SpringlessonjpaApplicationTests - contentAsString:[{"createDate":1522903405000,"id":1,"mgmtName":"超级管理员","remark":null},{"createDate":1515114703000,"id":2,"mgmtName":"普通管理员","remark":null},{"createDate":1515565599000,"id":3,"mgmtName":"移动团队管理员","remark":"team"},{"createDate":1515565881000,"id":4,"mgmtName":"电子直销团队管理员","remark":"team2"},{"createDate":1515565898000,"id":5,"mgmtName":"营销管理团队管理员","remark":"team3"},{"createDate":1515565919000,"id":6,"mgmtName":"电子服务团队管理员","remark":"team4"},{"createDate":1515565937000,"id":7,"mgmtName":"运营管理团队管理员","remark":"team5"},{"createDate":1515565952000,"id":8,"mgmtName":"决策支持团队管理员","remark":"team6"}]
+2018-12-24 15:46:14.924[][][Thread-3]INFO  - o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@6853425f: startup date [Mon Dec 24 15:46:08 CST 2018]; root of context hierarchy
+2018-12-24 15:46:14.930[][][Thread-3]INFO  - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-24 15:46:14.936[][][Thread-3]INFO  - c.a.d.pool.DruidDataSource - {dataSource-1} closed
